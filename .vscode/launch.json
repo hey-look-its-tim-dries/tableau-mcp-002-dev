@@ -1,0 +1,42 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch MCP Server",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/node_modules/@modelcontextprotocol/inspector/cli/build/cli.js",
+      "outFiles": ["${workspaceFolder}/**/build/**/*.js"],
+      "env": {
+        "AUTH": "${config:tableau.mcp.AUTH}",
+        "TRANSPORT": "${config:tableau.mcp.TRANSPORT}",
+        "SERVER": "${config:tableau.mcp.SERVER}",
+        "SITE_NAME": "${config:tableau.mcp.SITE_NAME}",
+        "PAT_NAME": "${config:tableau.mcp.PAT_NAME}",
+        "PAT_VALUE": "${config:tableau.mcp.PAT_VALUE}",
+        "JWT_SUB_CLAIM": "${config:tableau.mcp.JWT_SUB_CLAIM}",
+        "CONNECTED_APP_CLIENT_ID": "${config:tableau.mcp.CONNECTED_APP_CLIENT_ID}",
+        "CONNECTED_APP_SECRET_ID": "${config:tableau.mcp.CONNECTED_APP_SECRET_ID}",
+        "CONNECTED_APP_SECRET_VALUE": "${config:tableau.mcp.CONNECTED_APP_SECRET_VALUE}",
+        "JWT_ADDITIONAL_PAYLOAD": "${config:tableau.mcp.JWT_ADDITIONAL_PAYLOAD}",
+        "DATASOURCE_CREDENTIALS": "${config:tableau.mcp.DATASOURCE_CREDENTIALS}",
+        "DEFAULT_LOG_LEVEL": "${config:tableau.mcp.DEFAULT_LOG_LEVEL}",
+        "INCLUDE_TOOLS": "${config:tableau.mcp.INCLUDE_TOOLS}",
+        "EXCLUDE_TOOLS": "${config:tableau.mcp.EXCLUDE_TOOLS}",
+        "MAX_RESULT_LIMIT": "${config:tableau.mcp.MAX_RESULT_LIMIT}",
+        "DISABLE_LOG_MASKING": "${config:tableau.mcp.DISABLE_LOG_MASKING}",
+        "DISABLE_QUERY_DATASOURCE_FILTER_VALIDATION": "${config:tableau.mcp.DISABLE_QUERY_DATASOURCE_FILTER_VALIDATION}",
+        "DISABLE_METADATA_API_REQUESTS": "${config:tableau.mcp.DISABLE_METADATA_API_REQUESTS}"
+      },
+      "args": ["build/index.js"],
+      "sourceMaps": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "preLaunchTask": "npm: build:watch"
+    }
+  ]
+}

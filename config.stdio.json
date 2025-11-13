@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "tableau": {
+      "command": "node",
+      "args": ["build/index.js"],
+      "env": {
+        "TRANSPORT": "stdio",
+        "SERVER": "https://my-tableau-server.com",
+        "SITE_NAME": "",
+        "PAT_NAME": "",
+        "PAT_VALUE": "",
+        "DATASOURCE_CREDENTIALS": "",
+        "DEFAULT_LOG_LEVEL": "debug",
+        "INCLUDE_TOOLS": "",
+        "EXCLUDE_TOOLS": "",
+        "MAX_RESULT_LIMIT": "",
+        "DISABLE_QUERY_DATASOURCE_FILTER_VALIDATION": "",
+        "DISABLE_METADATA_API_REQUESTS": ""
+      }
+    }
+  }
+}
