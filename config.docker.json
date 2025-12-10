@@ -2,7 +2,14 @@
   "mcpServers": {
     "tableau": {
       "command": "docker",
-      "args": ["run", "-i", "--rm", "--env-file", "env.list", "tableau-mcp"]
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--env-file",
+        "/Users/timdries/tableau-mcp-002-dev/.env",
+        "tableau-mcp-002-dev:local"
+      ]
     }
   }
 }
