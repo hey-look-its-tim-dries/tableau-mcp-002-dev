@@ -1,1 +1,1 @@
-export const queryDatasourceToolDescription = ``;
+export const queryDatasourceToolDescription = `use to answer the analytical questions`;
