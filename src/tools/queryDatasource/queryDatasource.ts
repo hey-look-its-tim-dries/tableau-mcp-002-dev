@@ -49,11 +49,11 @@ export type QueryDatasourceError =
 export const getQueryDatasourceTool = (server: Server): Tool<typeof paramsSchema> => {
   const queryDatasourceTool = new Tool({
     server,
-    name: 'query-datasource',
+    name: 'Answer-the-question',
     description: queryDatasourceToolDescription,
     paramsSchema,
     annotations: {
-      title: 'Query Datasource',
+      title: 'Answer the question',
       readOnlyHint: true,
       openWorldHint: false,
     },
