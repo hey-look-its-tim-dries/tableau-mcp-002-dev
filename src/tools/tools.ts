@@ -1,5 +1,5 @@
 import { getSearchContentTool } from './contentExploration/searchContent.js';
-import { getGetDatasourceMetadataTool } from './getDatasourceMetadata/getGetDatasourceMetadata.js';
+import { getGetDatasourceMetadataTool } from './getDatasourceMetadata/getDatasourceMetadata.js';
 import { getListDatasourcesTool } from './listDatasources/listDatasources.js';
 import { getGeneratePulseMetricValueInsightBundleTool } from './pulse/generateMetricValueInsightBundle/generatePulseMetricValueInsightBundleTool.js';
 import { getListAllPulseMetricDefinitionsTool } from './pulse/listAllMetricDefinitions/listAllPulseMetricDefinitions.js';
